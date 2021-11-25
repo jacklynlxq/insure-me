@@ -10,3 +10,6 @@ Services:
 - Keycloak
 - Keycloak PostgreSQL
 - PostgreSQL
+
+Opening Swagger:
+http://localhost:3000/docs
