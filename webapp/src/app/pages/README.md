@@ -1,0 +1,1 @@
+Consists of NgModule for all distinct features in an application; for example, a `Calendar` feature. All feature areas are in their own folder, with their own NgModule.
