@@ -11,7 +11,7 @@ services:
   postgres:
     image: postgres
     env_file:
-        - .env
+        - ./insureme/.env
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports: 
@@ -24,7 +24,7 @@ services:
   keycloak-postgres:
       image: postgres
       env_file:
-        - .env
+        - ./insureme/.env
       volumes:
         - keycloak_postgres_data:/var/lib/postgresql/data
       ports: 
@@ -36,7 +36,7 @@ services:
   keycloak:
       image: quay.io/keycloak/keycloak:latest
       env_file:
-        - .env
+        - ./insureme/.env
       environment:
         DB_VENDOR: POSTGRES
         DB_ADDR: keycloak-postgres
